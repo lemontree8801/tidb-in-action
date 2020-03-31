@@ -1042,7 +1042,7 @@ Prepared CSN for table HR.TABLE_NAME:   57187843
 
 (4) 再次执行更新日志
 
-```sql
+```
 SQL> update hr.table_name set   updated_by='bbb';
 
 1 row updated.
@@ -1054,7 +1054,7 @@ Commit complete.
 
 (5) 查看 ogg 日志
 
-```bash
+```
 Logdump 23 >n
 ___________________________________________________________________
 Hdr-Ind      :     E  (x45)       Partition  :     .    (x0c)  
@@ -1246,7 +1246,8 @@ delete from t where id in (select id from t_bak);
 
 commit;
 ```
-o have read       ##
+```
+o have read       ##
 ## permission only by the oracle user or an administrator who     ##
 ## own this installation to protect any sensitive input values.   ##
 ##                                                                ##
